@@ -1,0 +1,19 @@
+.Checkbox header{
+    font-size: 1.5rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+.Checkbox-task{
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    padding: 5px 2px;
+    margin-right: 200px;
+    margin:5px 5px;
+    
+ }
+
+.Checkbox button{
+    padding: 6px 10px;
+}

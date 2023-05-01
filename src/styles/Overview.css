@@ -1,0 +1,18 @@
+.Overview {
+
+    /* background-color: white; */
+    border-radius: 15px;
+    padding: 10px;
+    /* border: solid yellow 3px; */
+    text-align: center;
+    color: white;
+    
+    
+  }
+.Overview-header{
+    font-size: calc(2rem);
+    color: white;
+}
+  .Overview-header p{
+    font: 1rem;
+  }
