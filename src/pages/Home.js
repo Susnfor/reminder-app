@@ -3,6 +3,7 @@ import "../styles/Home.css"
 import Welcome from "../components/Welcome";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 
 function Home() {
@@ -26,7 +27,13 @@ function Home() {
 
 
     return (
-        <div className="Home-main">
+        <motion.div 
+        className="Home-main"
+        initial={{scaleX: 0}}
+        animate={{scaleX: 1}}
+        transition={{duration:0.2}}
+        exit={{scaleX: 0}}
+        >
         <div className="Home-bg">
             <Welcome />
             <div className="Home-user">
@@ -39,7 +46,7 @@ function Home() {
             </Link>
             </div>
         </div>
-        </div>
+        </motion.div>
     );
 }
 

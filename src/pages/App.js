@@ -1,16 +1,13 @@
 import '../styles/App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from '../pages/Home';
-import Main from '../pages/Main';
+import { HashRouter } from 'react-router-dom';
+import AnimatedRoutes from '../components/AnimatedRoutes';
+
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path='/reminder-app' element={<Home/>} />
-        <Route path='/reminder-app/main' element={<Main/>} />
-      </Routes>
-    </Router>
+    <HashRouter>
+        <AnimatedRoutes/>
+    </HashRouter>
   );
 }
 

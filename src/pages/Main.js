@@ -7,6 +7,7 @@ import Checkbox from "../components/Checkbox";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Music from "../components/Music";
+import { motion } from "framer-motion";
 
 function Main() {
   const [list, setList] = useState([]); //to do items list
@@ -61,7 +62,13 @@ function Main() {
 
 
   return (
-    <div className="App-container">
+    <motion.div 
+    className="App-container"
+        initial={{scaleX: 0}}
+        animate={{scaleX: 1}}
+        transition={{duration:0.2}}
+        exit={{scaleX: 0}}
+    >
       <div className="App-background">
         <div className="App-main">
           <div className="App-topbg">
@@ -107,7 +114,7 @@ function Main() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
