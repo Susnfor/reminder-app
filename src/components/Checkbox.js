@@ -22,7 +22,8 @@ function Checkbox(props) {
             onChange={handleChange} />
             {props.task}
             </label>
-            <button onClick={props.function}>&times;</button>
+            <button //the delete button
+             onClick={props.function}>&times;</button>
         </header>
         </div>
     );

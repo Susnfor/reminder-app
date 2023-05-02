@@ -1,4 +1,5 @@
 import "../styles/App.css"
+import "../styles/Home.css"
 import Welcome from "../components/Welcome";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -26,14 +27,14 @@ function Home() {
 
     return (
         <div className="Home-main">
-        <div className="App-main">
+        <div className="Home-bg">
             <Welcome />
             <div className="Home-user">
             <input placeholder="What shall we call you?"
             onChange={(e) => setUser(e.target.value)}  //changes it while typing instead of when press button
             ></input>
             
-            <Link to="/main">
+            <Link to="/reminder-app/main">
             <button >Enter</button>
             </Link>
             </div>

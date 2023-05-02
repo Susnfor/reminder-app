@@ -2,10 +2,11 @@
 import "../styles/App.css";
 import Welcome from "../components/Welcome";
 import Checkbox from "../components/Checkbox";
-import Overview from "../components/Overview";
+// import Overview from "../components/Overview";
 // import Prompt from "../components/Prompt";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Music from "../components/Music";
 
 function Main() {
   const [list, setList] = useState([]); //to do items list
@@ -64,10 +65,11 @@ function Main() {
       <div className="App-background">
         <div className="App-main">
           <div className="App-topbg">
-            <Link to='/'><button style={{marginTop: '10px'}}>change/set name</button></Link>
+            <Link to='/reminder-app'><button style={{marginTop: '10px'}}>change/set name</button></Link>
             <Welcome name={user} />
             {/* <Overview //shows % of box ticked
             /> */}
+            <Music/>
           </div>
 
           <div className="App-bottombg">
