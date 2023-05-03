@@ -96,5 +96,7 @@ button{
   border-color: black;
   border-radius: 2px;
   border-style: solid;
+  padding: 10px;
+  border-radius: 15px;
 
 }

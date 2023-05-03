@@ -41,7 +41,7 @@ function Home() {
             onChange={(e) => setUser(e.target.value)}  //changes it while typing instead of when press button
             ></input>
             
-            <Link to="/reminder-app/main">
+            <Link to="/main">
             <button >Enter</button>
             </Link>
             </div>

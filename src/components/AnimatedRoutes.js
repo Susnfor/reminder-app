@@ -10,8 +10,8 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence mode='wait'>
       <Routes location={location} key={location.pathname}>
-        <Route exact path='/reminder-app' element={<Home/>} />
-        <Route path='/reminder-app/main' element={<Main/>} />
+        <Route exact path='/' element={<Home/>} />
+        <Route path='/main' element={<Main/>} />
       </Routes>
       </AnimatePresence>
   );

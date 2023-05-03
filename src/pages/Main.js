@@ -72,7 +72,7 @@ function Main() {
       <div className="App-background">
         <div className="App-main">
           <div className="App-topbg">
-            <Link to='/reminder-app'><button style={{marginTop: '10px'}}>change/set name</button></Link>
+            <Link to='/'><button style={{marginTop: '10px', padding: '10px', borderRadius: '15px'}}>change/set name</button></Link>
             <Welcome name={user} />
             {/* <Overview //shows % of box ticked
             /> */}
@@ -92,7 +92,7 @@ function Main() {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}>
                   </input>
-                  <button onClick={() => addTodo(input)}>Add</button>
+                  <button style={{marginLeft: "10px"}} onClick={() => addTodo(input)}>Add</button>
                   <button style={{marginLeft: "10px",  backgroundColor: "red"}} onClick={() => clearTodo()}>Clear All</button>
                 </div>
 
