@@ -52,8 +52,14 @@
   color: white;
   border-radius: 15px;
   padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
 }
-
+@media (min-width: 200px){
+  .App-header{
+    font-size: calc(3rem);
+  }
+}
 .App-top p{
   color: rgb(255, 255, 255);
   font-weight: bold;
