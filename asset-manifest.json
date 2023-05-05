@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/reminder-app/static/css/main.eafaae52.css",
-    "main.js": "/reminder-app/static/js/main.71e68e6c.js",
+    "main.css": "/reminder-app/static/css/main.9981c19c.css",
+    "main.js": "/reminder-app/static/js/main.b7f01171.js",
     "static/media/forest.mp3": "/reminder-app/static/media/forest.725c12fe99d76c57a3a6.mp3",
     "static/media/ancient.jpg": "/reminder-app/static/media/ancient.256b7111d1b042840fcd.jpg",
     "static/media/forest.jpg": "/reminder-app/static/media/forest.36b4b33b413853532570.jpg",
     "index.html": "/reminder-app/index.html",
-    "main.eafaae52.css.map": "/reminder-app/static/css/main.eafaae52.css.map",
-    "main.71e68e6c.js.map": "/reminder-app/static/js/main.71e68e6c.js.map"
+    "main.9981c19c.css.map": "/reminder-app/static/css/main.9981c19c.css.map",
+    "main.b7f01171.js.map": "/reminder-app/static/js/main.b7f01171.js.map"
   },
   "entrypoints": [
-    "static/css/main.eafaae52.css",
-    "static/js/main.71e68e6c.js"
+    "static/css/main.9981c19c.css",
+    "static/js/main.b7f01171.js"
   ]
 }
