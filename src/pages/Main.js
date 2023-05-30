@@ -66,11 +66,11 @@ function Main() {
       const handleCallback = (childData, checked) => {
         if (checked === true){ // if the item is checked, add the corresponding data/task to the list, then divide by 2 to get the total number of items
           checkedList.push(childData)
-          setCheckedTotal (checkedList.length/2)
+          setCheckedTotal (checkedList.length)
         }
         else {
           checkedList = checkedList.filter((item) => item !== childData) //if the item is unchecked, remove it from the list, then divide by 2 to get the total number of items
-          setCheckedTotal (checkedList.length/2)
+          setCheckedTotal (checkedList.length)
 
         }
       }
