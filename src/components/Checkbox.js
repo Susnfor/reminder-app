@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../styles/Checkbox.css";
 
 
-
 function Checkbox(props) {
     // const [list, setList] = useState([" "])
     const [checked, setChecked] = useState(false);
@@ -13,6 +12,7 @@ function Checkbox(props) {
 
 
 
+
     return (
         <div className="Checkbox">
         <header className="Checkbox-task">
@@ -20,6 +20,7 @@ function Checkbox(props) {
             <input type="checkbox"
             checked={checked}
             onChange={handleChange} />
+            {props.parentCallback(props.task, checked)}
             {props.task}
             </label>
             <button //the delete button

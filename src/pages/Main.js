@@ -2,7 +2,7 @@
 import "../styles/App.css";
 import Welcome from "../components/Welcome";
 import Checkbox from "../components/Checkbox";
-// import Overview from "../components/Overview";
+import Overview from "../components/Overview";
 // import Prompt from "../components/Prompt";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -60,6 +60,21 @@ function Main() {
     }//saves todolist to local storage
   },[list])
 
+//Overview Code Section
+  let checkedList = [] //total number of items
+  let [checkedTotal, setCheckedTotal] = useState(0) //total number of items
+      const handleCallback = (childData, checked) => {
+        if (checked === true){ // if the item is checked, add the corresponding data/task to the list, then divide by 2 to get the total number of items
+          checkedList.push(childData)
+          setCheckedTotal (checkedList.length/2)
+        }
+        else {
+          checkedList = checkedList.filter((item) => item !== childData) //if the item is unchecked, remove it from the list, then divide by 2 to get the total number of items
+          setCheckedTotal (checkedList.length/2)
+
+        }
+      }
+
 
   return (
     <motion.div 
@@ -74,8 +89,8 @@ function Main() {
           <div className="App-topbg">
             <Link to='/'><button style={{marginTop: '10px', padding: '10px', borderRadius: '15px'}}>change/set name</button></Link>
             <Welcome name={user} />
-            {/* <Overview //shows % of box ticked
-            /> */}
+            <Overview listTotal = {list.length} listChecked = {checkedTotal}//shows % of box ticked
+            />
             <Music/>
           </div>
 
@@ -97,15 +112,19 @@ function Main() {
                 </div>
 
                 {/* basically maps out every item in the list, including newly added todo */}
-                {list.map((item) => 
+                {
+                list.map((item) => 
                 (
                 <Checkbox 
+                parentCallback={handleCallback}
                 key={item.id} 
                 task={item.todo} 
                 function={() => deleteTodo(item.id)} 
                 //pass it as a arrow function or it automatically runs function
                 /> 
-                ))}
+              
+                ))
+                }
 
 
                 

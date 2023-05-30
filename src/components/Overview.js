@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Overview.css";
 
 
-function Overview() {
+function Overview(props) {
 
 
     return (
@@ -10,7 +10,7 @@ function Overview() {
         <header className="Overview-header">
             Overview
         </header>
-        <p>completed today: 5/10</p>
+        <p>You've completed: {props.listChecked} / {props.listTotal}</p>
         </div>
     );
 }
