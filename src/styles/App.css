@@ -37,6 +37,11 @@
   width: 100%;
 }
 
+.App-progressbar{
+  width: 90%;
+  margin-bottom: 20px;
+}
+
 .App-top{
   padding-top: 10px;
   display: flex;
